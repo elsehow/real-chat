@@ -1,5 +1,8 @@
 {
   "author": "elsehow",
+  "name": "real-chat",
+  "version": "0.1.0",
+  "description":"multiparty encrypted chat. a wrapper around dominictarr's private-box",
   "license": "BSD-3-Clause",
   "main": "src/index.js",
   "scripts": {
@@ -10,5 +13,7 @@
     "runwatch": "^0.1.3",
     "tape": "^4.5.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "private-box": "^0.2.0"
+  }
 }
