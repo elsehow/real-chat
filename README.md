@@ -40,6 +40,19 @@ encrypt `string` to some array of ed25519 public keys, where the length of the a
 
 decrypt ciphertext with a secret key.
 
+### real.stringify(ctxt) / real.parse(str)
+
+convenience functions for sending ciphertext over the wire. 
+
+```javascript
+var ciphertext = real.encrypt(msg, [alice.publicKey, bob.publicKey])
+// turn ciphertext into a string, so we can send it e.g. over post request
+var serialized = real.stringify(ciphertext) 
+// now turn it from a string back into a buffer, so we can decrypt it
+var deserialized = real.parse(ciphertext)
+var cleartext  = real.decrypt(deserialized, alice.secretKey)
+```
+
 ## license
 
 BSD
