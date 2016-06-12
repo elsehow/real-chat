@@ -2,7 +2,7 @@
   "author": "elsehow",
   "name": "real-chat",
   "version": "0.1.1",
-  "description":"multiparty encrypted chat. a wrapper around dominictarr's private-box",
+  "description": "multiparty encrypted chat. a wrapper around dominictarr's private-box",
   "license": "BSD-3-Clause",
   "main": "src/index.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "tape": "^4.5.1"
   },
   "dependencies": {
+    "chloride": "^2.1.1",
     "private-box": "^0.2.0"
   }
 }
